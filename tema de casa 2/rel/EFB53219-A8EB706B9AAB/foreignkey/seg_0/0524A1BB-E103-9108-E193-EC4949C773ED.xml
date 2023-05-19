@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="0524A1BB-E103-9108-E193-EC4949C773ED" containerWithKeyObject="E6EF6B64-3F37-5633-3B41-B400FF63E646" localFKIndex="DBF0FE7F-C785-D0FA-B280-D64386876F88" name="Stil_dans_fk">
+<createdBy>Irina</createdBy>
+<createdTime>2023-01-13 10:36:17 UTC</createdTime>
+<generatorID>DF16D7FF-25FC-CAA7-EF8E-74D1434BF5A4</generatorID>
+<ownerDesignName>tema de casa 2</ownerDesignName>
+<referredTableLongName>Stiluri</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>C0F63985-8AA0-9766-0DB6-B7EEE55B5987</referredTableID>
+<keyObject>5E4D2329-8DDE-DFB6-3C93-DF08ED23731F</keyObject>
+<referredKeyID>5E4D2329-8DDE-DFB6-3C93-DF08ED23731F</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_stil</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

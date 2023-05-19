@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="tema de casa 2" id="70B4E8C2-808E-22E3-43DC-C2576C234D5A" version="3.5">
+<createdBy>Irina</createdBy>
+<createdTime>2022-10-27 08:32:34 UTC</createdTime>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>70B4E8C2-808E-22E3-43DC-C2576C234D5A</designId>
+</OSDM_Design>

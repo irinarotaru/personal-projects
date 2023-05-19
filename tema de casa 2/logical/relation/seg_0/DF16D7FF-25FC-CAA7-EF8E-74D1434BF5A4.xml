@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Stil_dans_fk" directorySegmentName="seg_0" id="DF16D7FF-25FC-CAA7-EF8E-74D1434BF5A4">
+<createdBy>Irina</createdBy>
+<createdTime>2023-01-04 13:03:22 UTC</createdTime>
+<ownerDesignName>tema de casa 2</ownerDesignName>
+<engineerTo>
+<item key="EFB53219-1430-4D7D-B340-A8EB706B9AAB" value="true"/>
+</engineerTo>
+<sourcePk>E9ED9FED-CF62-6EB6-7071-64BA32272579</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>corespunde</nameOnSource>
+<nameOnTarget>are stilul</nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>A7A9903F-D9FA-78FB-E998-745C6ACFCDAF</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>EAC53E97-7391-7A8A-800A-57BC4CFE9F5F</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+
+@font-face {
+	font-family: 'SansationLight';
+	src: url('./FontSansationLight/SansationLight.eot');
+	src: local('SansationLight'), url('./FontSansationLight/SansationLight.woff') format('woff'), url('./FontSansationLight/SansationLight.ttf') format('truetype');
+}
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'SansationLight' !important;
+    background: rgb(22,22,22);
+}
+
+/* Style tab links */
+.tablink {
+	font-weight: bold;
+	font-family: 'SansationLight' !important;
+    background-color: #557;
+    color: azure;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 12px 12px;
+    font-size: 17px;
+    width: 12.5%;
+}
+
+.tablink:hover {
+    background-color: #579;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+    color: white;
+    padding: 100px 20px;
+    height: 100%;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-color: white;
+    text-align: center;
+}
+th, td {
+    padding: 15px;
+}
+
+.radiotext {
+    margin: 10px 10px 0px 0px;
+}
+
+</style>
+<script>
+	/*function myFunction() {	
+  var rate_value = document.getElementsByName('region_id');
+
+	if(rate_value[0]){
+	alert(rate_value[0].value);
+	document.getElementsByName('employee_id').value=rate_value[0].value;
+	alert(document.getElementsByName('employee_id').value);
+  }}*/
+</script>
+</head>
+<body>
+
+  <a href="cursuri_dans"><button class="tablink" style="background:rgb(70,130,180); color: white">cursuri_dans</button></a>
+  <a href="cursanti"><button class="tablink">cursanti</button></a>
+  <a href="antrenori"><button class="tablink">antrenori</button></a>
+  <a href="stiluri"><button class="tablink">stiluri</button></a>
+  <a href="orar"><button class="tablink">orar</button></a>
+  <a href="inscrieri"><button class="tablink">inscrieri</button></a>
+  
+  <div id="Consilieri" class="tabcontent">
+	<center>
+		  <br>
+  		<h1 id="h3">Cursuri_dans</h1>
+  		<br><br>
+      <div class="btn-group">
+        <a href="addCurs"><button type="button" class="btn btn-primary" >Adauga curs</button></a>
+        <br>
+
+        
+      </div>
+      <br><br><br><br>
+  		<table style="width:70%">
+  			<tr>
+    			<th>Nr. crt.</th>
+    			<th>nume_curs</th> 
+    			<th>pret</th>
+    			<th>dificultate</th>
+          <th>maxim_cursanti</th>
+    			<th>id_antrenor</th>
+				<th>id_stil</th>
+				<th>id_sedinta</th>
+          <th>Editare/Stergere</th>
+  			</tr>
+        {% for curs in cursuri %}
+  			<tr>
+    			<td>{{curs["id_curs"]}}</td>
+    			<td>{{curs["nume_curs"]}}</td> 
+    			<td>{{curs["pret"]}}</td>
+    			<td>{{curs["dificultate"]}}</td>
+          <td>{{curs["maxim_cursanti"]}}</td>
+    			<td>{{curs["id_antrenor"]}}</td>
+				<td>{{curs["id_stil"]}}</td>
+				<td>{{curs["id_sedinta"]}}</td>
+				
+          <td>
+                <form class="was-validated" method="POST" action="/getCurs">
+                  <button type="submit" name="id_curs" value="{{curs['id_curs']}}" class="btn btn-primary">Editeaza curs</button>
+                </form>
+                <form class="was-validated" method="POST" action="/delCurs">
+                  <button type="submit" name="id_curs" value="{{curs['id_curs']}}" class="btn btn-primary">Sterge curs</button>
+                </form>
+          </td>
+  			</tr>
+  			{% endfor %}
+		  </table>
+      <br><br><br>
+  </center>
+
+</body>
+</html> 

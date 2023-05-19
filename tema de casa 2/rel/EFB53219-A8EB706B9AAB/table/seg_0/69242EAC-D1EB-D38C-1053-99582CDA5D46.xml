@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="69242EAC-D1EB-D38C-1053-99582CDA5D46" name="Antrenori">
+<createdBy>Irina</createdBy>
+<createdTime>2023-01-13 10:36:17 UTC</createdTime>
+<generatorID>CF8AD1C9-1585-CDC0-D4E9-B6D5833AC324</generatorID>
+<ownerDesignName>tema de casa 2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_antrenor" id="07D329F5-BF8D-278D-54AD-E3EAC5170ACF">
+<createdBy>Irina</createdBy>
+<createdTime>2023-01-13 10:36:17 UTC</createdTime>
+<generatorID>0BAE06D3-C5A7-4521-3CD2-C89E4D03335E</generatorID>
+<ownerDesignName>tema de casa 2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nr_maxim" id="1FA66D5C-1ED9-FA31-2852-42D6681E75C5">
+<createdBy>Irina</createdBy>
+<createdTime>2023-01-13 10:36:17 UTC</createdTime>
+<generatorID>DDE2F315-704B-83DA-E57C-D28ABD46F168</generatorID>
+<ownerDesignName>tema de casa 2</ownerDesignName>
+<constraintName>Antrenori_nr_maxim_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="nr_maxim&gt;0"/>
+</checkConstraint>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nume_antrenor" id="8165F657-B8CB-27F7-82EF-A755F5926C06">
+<createdBy>Irina</createdBy>
+<createdTime>2023-01-13 10:36:17 UTC</createdTime>
+<generatorID>F427BD25-5D66-8ED3-4C9E-E51C93312453</generatorID>
+<ownerDesignName>tema de casa 2</ownerDesignName>
+<constraintName>Antrenori_nume_antrenor_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="lenght(nume_antrenor)&gt;1 and regexp_like(nume_antenor,&apos;[A-Z]{1}[a-z]+ [A-Z]{1}[a-z]+$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="342AE1CD-616A-4803-00F6-5D42FDD6ACD6" name="Antrenori_PK">
+<createdBy>Irina</createdBy>
+<createdTime>2023-01-13 10:36:17 UTC</createdTime>
+<generatorID>0C5ADDF6-E057-1EB9-37DE-A770201957CB</generatorID>
+<ownerDesignName>tema de casa 2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="07D329F5-BF8D-278D-54AD-E3EAC5170ACF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

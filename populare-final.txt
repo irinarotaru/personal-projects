@@ -1,0 +1,40 @@
+INSERT INTO orar(inceput,final) values 
+(TO_TIMESTAMP('2023-01-23 14:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2023-01-23 16:00:00', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO orar(inceput,final) values 
+(TO_TIMESTAMP('2022-10-22 14:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2022-10-22 16:00:00', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO orar(inceput,final) values 
+(TO_TIMESTAMP('2023-01-12 16:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2023-01-12 19:00:00', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO orar(inceput,final) values 
+(TO_TIMESTAMP('2023-02-22 18:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2023-02-22 20:00:00', 'YYYY-MM-DD HH24:MI:SS'));
+INSERT INTO orar(inceput,final) values 
+(TO_TIMESTAMP('2023-01-24 14:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2023-01-24 16:00:00', 'YYYY-MM-DD HH24:MI:SS'));
+
+insert into antrenori(nume_antrenor,nr_maxim) values('Andrei Marin',5);
+insert into antrenori(nume_antrenor,nr_maxim) values('Mihai Tauc',2);
+insert into antrenori(nume_antrenor,nr_maxim) values('Ana Lazea',1);
+insert into antrenori(nume_antrenor,nr_maxim) values('Bogdan Petrila',3);
+insert into antrenori(nume_antrenor,nr_maxim) values('Miruna Moschi',1);
+
+insert into stiluri(nume_stil) values('Bachata');
+insert into stiluri(nume_stil) values('Breakdance');
+insert into stiluri(nume_stil) values('Contemporan');
+insert into stiluri(nume_stil) values('Modern');
+insert into stiluri(nume_stil) values('Acrobatica');
+
+insert into cursanti(nume_cursant) values('Matei Enas');
+insert into cursanti(nume_cursant) values('Alina Pop');
+insert into cursanti(nume_cursant) values('Cosmin Baciu');
+insert into cursanti(nume_cursant) values('Malina Rosin');
+insert into cursanti(nume_cursant) values('Daria Iorg');
+
+insert into cursuri_dans(nume_curs,pret,dificultate,maxim_cursanti,id_antrenor,id_stil,id_sedinta) values('Nunta',250,'usor',2,36,30,18);
+insert into cursuri_dans(nume_curs,pret,dificultate,maxim_cursanti,id_antrenor,id_stil,id_sedinta) values('Balet',200,'greu',1,34,32,19);
+insert into cursuri_dans(nume_curs,pret,dificultate,maxim_cursanti,id_antrenor,id_stil,id_sedinta) values('Latino',100,'usor',1,38,30,22);
+insert into cursuri_dans(nume_curs,pret,dificultate,maxim_cursanti,id_antrenor,id_stil,id_sedinta) values('Street',50,'mediu',2,37,31,23);
+insert into cursuri_dans(nume_curs,pret,dificultate,maxim_cursanti,id_antrenor,id_stil,id_sedinta) values('Bal',150,'greu',1,35,33,24);
+
+insert into inscrieri(Cursuri_Dans_id_curs,Cursanti_id_cursant) values(34,25);
+insert into inscrieri(Cursuri_Dans_id_curs,Cursanti_id_cursant) values(34,26);
+insert into inscrieri(Cursuri_Dans_id_curs,Cursanti_id_cursant) values(35,27);
+insert into inscrieri(Cursuri_Dans_id_curs,Cursanti_id_cursant) values(36,28);
+insert into inscrieri(Cursuri_Dans_id_curs,Cursanti_id_cursant) values(38,29);

@@ -1,0 +1,166 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="EAC53E97-7391-7A8A-800A-57BC4CFE9F5F" name="Cursuri_Dans">
+<createdBy>Irina</createdBy>
+<createdTime>2022-10-27 08:34:40 UTC</createdTime>
+<ownerDesignName>tema de casa 2</ownerDesignName>
+<engineerTo>
+<item key="EFB53219-1430-4D7D-B340-A8EB706B9AAB" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_curs" id="DF1867B6-FA43-FE2E-F2B1-7B02245EEBB2">
+<createdBy>Irina</createdBy>
+<createdTime>2022-10-27 08:36:03 UTC</createdTime>
+<ownerDesignName>tema de casa 2</ownerDesignName>
+<engineerTo>
+<item key="EFB53219-1430-4D7D-B340-A8EB706B9AAB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nume_curs" id="8F985B19-7527-E518-1806-16B4985887F2">
+<createdBy>Irina</createdBy>
+<createdTime>2022-11-12 10:06:10 UTC</createdTime>
+<ownerDesignName>tema de casa 2</ownerDesignName>
+<engineerTo>
+<item key="EFB53219-1430-4D7D-B340-A8EB706B9AAB" value="true"/>
+</engineerTo>
+<constraintName>Cursuri_Dans_nume_curs_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(nume_curs,&apos;[A-Za-z]{1}[a-z]+$&apos;) and length(nume_curs)&gt;1"/>
+</checkConstraint>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pret" id="F7E403F6-2AA4-16A7-0E07-9A3F30A4F6AB">
+<createdBy>Irina</createdBy>
+<createdTime>2022-10-27 08:47:16 UTC</createdTime>
+<ownerDesignName>tema de casa 2</ownerDesignName>
+<engineerTo>
+<item key="EFB53219-1430-4D7D-B340-A8EB706B9AAB" value="true"/>
+</engineerTo>
+<constraintName>Cursuri_Dans_pret_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>30</beginValue>
+<endValue>300</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="dificultate" id="EB22BF40-4105-BA68-BE96-F9DA4B289E72">
+<createdBy>Irina</createdBy>
+<createdTime>2022-10-28 10:47:40 UTC</createdTime>
+<ownerDesignName>tema de casa 2</ownerDesignName>
+<engineerTo>
+<item key="EFB53219-1430-4D7D-B340-A8EB706B9AAB" value="true"/>
+</engineerTo>
+<constraintName>Cursuri_Dans_dificultate_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<listOfValues>
+<valueDef value="greu" description=""/>
+<valueDef value="mediu" description=""/>
+<valueDef value="usor" description=""/>
+</listOfValues>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="maxim_cursanti" id="A9B73225-01A0-E0AC-92DF-0891A80501FE">
+<createdBy>Irina</createdBy>
+<createdTime>2023-01-13 10:18:35 UTC</createdTime>
+<ownerDesignName>tema de casa 2</ownerDesignName>
+<engineerTo>
+<item key="EFB53219-1430-4D7D-B340-A8EB706B9AAB" value="true"/>
+</engineerTo>
+<constraintName>Cursuri_dans_maxim_cursanti_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="maxim_cursanti&gt;0"/>
+</checkConstraint>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_antrenor" id="14EBF374-9F83-BEFF-8078-F5E0FC5CB8FC">
+<createdBy>Irina</createdBy>
+<createdTime>2022-11-18 12:34:29 UTC</createdTime>
+<generatorID>B1044F5C-9625-F313-0A13-B9261DB6684F</generatorID>
+<ownerDesignName>tema de casa 2</ownerDesignName>
+<engineerTo>
+<item key="EFB53219-1430-4D7D-B340-A8EB706B9AAB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>0BAE06D3-C5A7-4521-3CD2-C89E4D03335E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_stil" id="5FEFB32C-10B9-F720-936E-786FDDC9E0D7">
+<createdBy>Irina</createdBy>
+<createdTime>2023-01-04 13:03:22 UTC</createdTime>
+<generatorID>DF16D7FF-25FC-CAA7-EF8E-74D1434BF5A4</generatorID>
+<ownerDesignName>tema de casa 2</ownerDesignName>
+<engineerTo>
+<item key="EFB53219-1430-4D7D-B340-A8EB706B9AAB" value="true"/>
+</engineerTo>
+<referedAttribute>A1792B26-FCF5-5946-D0C2-2C7932DBFEFE</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_sedinta" id="8A3344A6-A75B-21C3-42F4-0232FC04F1E7">
+<createdBy>Irina</createdBy>
+<createdTime>2023-01-04 15:12:22 UTC</createdTime>
+<generatorID>FD51FC3B-B8EC-2180-A7DB-D68C1D91D012</generatorID>
+<ownerDesignName>tema de casa 2</ownerDesignName>
+<engineerTo>
+<item key="EFB53219-1430-4D7D-B340-A8EB706B9AAB" value="true"/>
+</engineerTo>
+<referedAttribute>187105D9-F32C-1363-80F7-9280CFA12A4E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="654BCAFC-ACED-3189-E1A0-8ABECBB3AA2B" name="Cursuri_Dans PK">
+<createdBy>Irina</createdBy>
+<createdTime>2022-11-18 12:17:53 UTC</createdTime>
+<ownerDesignName>tema de casa 2</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="EFB53219-1430-4D7D-B340-A8EB706B9AAB" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>DF1867B6-FA43-FE2E-F2B1-7B02245EEBB2</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,56 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C0F63985-8AA0-9766-0DB6-B7EEE55B5987" name="Stiluri">
+<createdBy>Irina</createdBy>
+<createdTime>2023-01-13 10:36:17 UTC</createdTime>
+<generatorID>A7A9903F-D9FA-78FB-E998-745C6ACFCDAF</generatorID>
+<ownerDesignName>tema de casa 2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_stil" id="51388822-35B4-0F61-E920-4D16DA546C66">
+<createdBy>Irina</createdBy>
+<createdTime>2023-01-13 10:36:17 UTC</createdTime>
+<generatorID>A1792B26-FCF5-5946-D0C2-2C7932DBFEFE</generatorID>
+<ownerDesignName>tema de casa 2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nume_stil" id="B836FBF4-F286-DE5C-6B60-EA17312E3E06">
+<createdBy>Irina</createdBy>
+<createdTime>2023-01-13 10:36:17 UTC</createdTime>
+<generatorID>DC62A21C-1AD7-626F-D8ED-E4A2984DA01C</generatorID>
+<ownerDesignName>tema de casa 2</ownerDesignName>
+<constraintName>Stiluri_nume_stil_ck</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(nume_stil,&apos;[A-Za-z]{1}[a-z]+$&apos;) and length(nume_stil)&gt;1"/>
+</checkConstraint>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5E4D2329-8DDE-DFB6-3C93-DF08ED23731F" name="Stiluri_PK">
+<createdBy>Irina</createdBy>
+<createdTime>2023-01-13 10:36:17 UTC</createdTime>
+<generatorID>E9ED9FED-CF62-6EB6-7071-64BA32272579</generatorID>
+<ownerDesignName>tema de casa 2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="51388822-35B4-0F61-E920-4D16DA546C66"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

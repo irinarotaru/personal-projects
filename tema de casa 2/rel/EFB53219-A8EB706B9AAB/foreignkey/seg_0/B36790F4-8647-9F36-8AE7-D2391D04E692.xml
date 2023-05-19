@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B36790F4-8647-9F36-8AE7-D2391D04E692" containerWithKeyObject="E6EF6B64-3F37-5633-3B41-B400FF63E646" localFKIndex="1255150D-3911-EA1D-1FCE-23C5B0060DF2" name="Antrenorul_Cursului_fk">
+<createdBy>Irina</createdBy>
+<createdTime>2023-01-13 10:36:17 UTC</createdTime>
+<generatorID>B1044F5C-9625-F313-0A13-B9261DB6684F</generatorID>
+<ownerDesignName>tema de casa 2</ownerDesignName>
+<referredTableLongName>Antrenori</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>69242EAC-D1EB-D38C-1053-99582CDA5D46</referredTableID>
+<keyObject>342AE1CD-616A-4803-00F6-5D42FDD6ACD6</keyObject>
+<referredKeyID>342AE1CD-616A-4803-00F6-5D42FDD6ACD6</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>id_antrenor</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

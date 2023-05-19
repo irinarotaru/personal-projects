@@ -1,0 +1,55 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BDEED0FD-6E56-4522-66C9-8E23D2D8B717" name="Cursanti">
+<createdBy>Irina</createdBy>
+<createdTime>2023-01-13 10:36:17 UTC</createdTime>
+<generatorID>8041EA3F-F22D-8D64-E63E-F85653BDEA7B</generatorID>
+<ownerDesignName>tema de casa 2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_cursant" id="16134867-E5D2-4E75-97B9-8627B504714C">
+<createdBy>Irina</createdBy>
+<createdTime>2023-01-13 10:36:17 UTC</createdTime>
+<generatorID>ABCF4704-9302-2C1A-650D-46845E0C54EF</generatorID>
+<ownerDesignName>tema de casa 2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nume_cursant" id="3430E0B6-E43E-A4A5-33AD-3C3CF2CD2EAF">
+<createdBy>Irina</createdBy>
+<createdTime>2023-01-13 10:36:17 UTC</createdTime>
+<generatorID>02D9A34C-3412-2C53-38D9-F85556B6ED57</generatorID>
+<ownerDesignName>tema de casa 2</ownerDesignName>
+<constraintName>Cursanti_nume_cursant_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(nume_cursant)&gt;1 and regexp_like(nume_cursant,&apos;[A-Z]{1}[a-z]+ [A-Z]{1}[a-z]+$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3229FD9B-8BE1-0F6A-8E0C-91185F7D1E43" name="Cursanti_PK">
+<createdBy>Irina</createdBy>
+<createdTime>2023-01-13 10:36:17 UTC</createdTime>
+<generatorID>FF6226E2-F092-B0D8-EB35-073AF5BB351A</generatorID>
+<ownerDesignName>tema de casa 2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="16134867-E5D2-4E75-97B9-8627B504714C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

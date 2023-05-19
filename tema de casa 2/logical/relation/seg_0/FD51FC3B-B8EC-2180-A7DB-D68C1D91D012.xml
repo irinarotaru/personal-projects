@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Sedinte_fk" directorySegmentName="seg_0" id="FD51FC3B-B8EC-2180-A7DB-D68C1D91D012">
+<createdBy>Irina</createdBy>
+<createdTime>2023-01-04 15:12:22 UTC</createdTime>
+<ownerDesignName>tema de casa 2</ownerDesignName>
+<engineerTo>
+<item key="EFB53219-1430-4D7D-B340-A8EB706B9AAB" value="true"/>
+</engineerTo>
+<sourcePk>3F745B92-0CB9-4BEA-0A80-8988F464B42B</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>8F8FC65C-6E01-573B-E98F-FA388BDAB019</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>EAC53E97-7391-7A8A-800A-57BC4CFE9F5F</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

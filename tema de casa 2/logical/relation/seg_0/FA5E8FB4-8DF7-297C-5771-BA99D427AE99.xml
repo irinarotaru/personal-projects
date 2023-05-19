@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Inscrieri" directorySegmentName="seg_0" id="FA5E8FB4-8DF7-297C-5771-BA99D427AE99">
+<createdBy>Irina</createdBy>
+<createdTime>2023-01-13 10:34:28 UTC</createdTime>
+<ownerDesignName>tema de casa 2</ownerDesignName>
+<engineerTo>
+<item key="EFB53219-1430-4D7D-B340-A8EB706B9AAB" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>EAC53E97-7391-7A8A-800A-57BC4CFE9F5F</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>8041EA3F-F22D-8D64-E63E-F85653BDEA7B</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

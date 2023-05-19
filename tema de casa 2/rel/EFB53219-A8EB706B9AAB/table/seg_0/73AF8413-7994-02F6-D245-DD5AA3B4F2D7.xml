@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="73AF8413-7994-02F6-D245-DD5AA3B4F2D7" name="Inscrieri">
+<createdBy>Irina</createdBy>
+<createdTime>2023-01-13 10:36:17 UTC</createdTime>
+<ownerDesignName>tema de casa 2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Cursuri_Dans_id_curs" id="FC9FE916-3BC8-AE8F-624F-4BED6BC046B0">
+<createdBy>Irina</createdBy>
+<createdTime>2023-01-13 10:36:17 UTC</createdTime>
+<ownerDesignName>tema de casa 2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="367B5EBC-D479-5CB7-3C8D-A1DE7855F205" referredColumn="FA63C523-BC51-B1B0-F69E-1155C144EFCF"/>
+</associations>
+</Column>
+<Column name="Cursanti_id_cursant" id="C97B1A82-7B2E-4B7A-910C-6248099FEAB3">
+<createdBy>Irina</createdBy>
+<createdTime>2023-01-13 10:36:17 UTC</createdTime>
+<ownerDesignName>tema de casa 2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="12CA54D1-D792-4ED2-38BD-5946499536AA" referredColumn="16134867-E5D2-4E75-97B9-8627B504714C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="29D07B42-F982-4876-BEBF-6A76C9F79A43" name="Inscrieri_PK">
+<createdBy>Irina</createdBy>
+<createdTime>2023-01-13 10:36:17 UTC</createdTime>
+<ownerDesignName>tema de casa 2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FC9FE916-3BC8-AE8F-624F-4BED6BC046B0"/>
+<colUsage columnID="C97B1A82-7B2E-4B7A-910C-6248099FEAB3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0B7CDB33-8F7E-56B6-7DB7-274D0734DB34" name="Inscrieri_Cursuri_Dans_FK">
+<createdBy>Irina</createdBy>
+<createdTime>2023-01-13 10:36:17 UTC</createdTime>
+<generatorID>FA5E8FB4-8DF7-297C-5771-BA99D427AE99</generatorID>
+<ownerDesignName>tema de casa 2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FC9FE916-3BC8-AE8F-624F-4BED6BC046B0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="525AED04-8F8A-0F7D-298B-5827F22D894D" name="Inscrieri_Cursanti_FK">
+<createdBy>Irina</createdBy>
+<createdTime>2023-01-13 10:36:17 UTC</createdTime>
+<generatorID>FA5E8FB4-8DF7-297C-5771-BA99D427AE99</generatorID>
+<ownerDesignName>tema de casa 2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C97B1A82-7B2E-4B7A-910C-6248099FEAB3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
