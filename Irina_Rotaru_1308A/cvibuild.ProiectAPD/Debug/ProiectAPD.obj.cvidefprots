@@ -1,0 +1,55 @@
+[main]
+Class="Function"
+Prototype="int main(int argc, char *argv[]);"
+SourceLocation="d:\APD\Irina_Rotaru_1308A\ProiectAPD.c:26:5"
+
+[filtrare]
+Class="Function"
+Prototype="int filtrare(double *semnal, double alpha, double *filtrat);"
+SourceLocation="d:\APD\Irina_Rotaru_1308A\ProiectAPD.c:41:5"
+
+[mediere]
+Class="Function"
+Prototype="void mediere(int n);"
+SourceLocation="d:\APD\Irina_Rotaru_1308A\ProiectAPD.c:50:6"
+
+[OnLoadButtonCB]
+Class="Function"
+Prototype="int OnLoadButtonCB(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="d:\APD\Irina_Rotaru_1308A\ProiectAPD.c:69:17"
+
+[OnMainPanel]
+Class="Function"
+Prototype="int OnMainPanel(int panel, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="d:\APD\Irina_Rotaru_1308A\ProiectAPD.c:129:17"
+
+[OnNext]
+Class="Function"
+Prototype="int OnNext(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="d:\APD\Irina_Rotaru_1308A\ProiectAPD.c:147:17"
+
+[OnPrev]
+Class="Function"
+Prototype="int OnPrev(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="d:\APD\Irina_Rotaru_1308A\ProiectAPD.c:182:17"
+
+[OnFiltrare]
+Class="Function"
+Prototype="int OnFiltrare(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="d:\APD\Irina_Rotaru_1308A\ProiectAPD.c:201:17"
+
+[OnSwitch]
+Class="Function"
+Prototype="int OnSwitch(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="d:\APD\Irina_Rotaru_1308A\ProiectAPD.c:231:17"
+
+[OnTimer]
+Class="Function"
+Prototype="int OnTimer(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="d:\APD\Irina_Rotaru_1308A\ProiectAPD.c:254:17"
+
+[OnSecondPanel]
+Class="Function"
+Prototype="int OnSecondPanel(int panel, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="d:\APD\Irina_Rotaru_1308A\ProiectAPD.c:401:17"
+
