@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ro-RO">
+    <head>
+        <link rel="stylesheet" href="css/stil.css">
+        <script type="text/javascript"
+            src="js/cumparaturi.js"></script>
+        <title>Animale de companie</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+       <form>
+            <label for="name">Nume produs:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="quan">Cantitate:</label><br>
+            <input type="text" id="quan" name="quan"><br>
+            <input type="button" id="adaug" value="Adaugă" onclick="adauga()"><br>
+       </form> 
+       <table id="listacump">
+        <tr>
+            <th>Nr.</th>
+            <th>Nume Produs</th>
+            <th>Cantitate</th>
+          </tr>
+       </table>
+       <p>Cum doriți să salvați?</p>
+       <label for="local">Local Storage</label><br>
+       <input type="radio" id="local" name="storage"><br>
+       <label for="db">IndexDB</label><br>
+       <input type="radio" id="db" name="storage"><br><br><br>
+    </body>
+</html>

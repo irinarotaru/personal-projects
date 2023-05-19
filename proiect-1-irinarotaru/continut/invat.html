@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ro-RO">
+<head>
+    <link rel="stylesheet" href="css/stil.css">
+    <script type="text/javascript"
+            src="js/script.js"></script>
+    <title>Animale de companie</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <h2>Informații generale:</h2>
+    <p id="timpCurent"></p>
+    <p id="adresaMea"></p>
+    <p id="locatiaMea"></p>
+    <p id="browserVer"></p>
+    <p id="browserName"></p>
+    <p id="sistemop"></p>
+    <br><br>
+    <h2>Desenați-vă animalul de companie:</h2>
+    <form>
+        <label for="favcolor">Alegeți culoarea pentru umplere:</label>
+        <input type="color" id="favcolor" name="favcolor" value="#ff0000"><br><br>
+    </form>
+    <form>
+        <label for="favcolor2">Alegeți culoarea pentru contur:</label>
+        <input type="color" id="favcolor2" name="favcolor2" value="#ff0000"><br><br>
+    </form>
+    <canvas id="desen" onclick="deseneaza(event)"></canvas>
+    <h2>Poți personaliza următorul tabel!</h2>
+    <label for="index">Alegeți poziția din tabel:</label>
+    <input type="text" id="index">
+    <form>
+        <label for="favcolor3">Alegeți culoarea de fundal pentru tabel:</label>
+        <input type="color" id="favcolor3" name="favcolor3" value="#000000"><br>
+    </form><br>
+    <input type="button" value="Inserare linie nouă" onclick="tabel()"><br>
+    <input type="button" value="Inserare coloană nouă" onclick="tabel2()"><br>
+    <table id="t">
+        <tr>
+          <th>Tipul animalului</th>
+          <th>Numele</th>
+        </tr>
+        <tr>
+          <td>Cățel</td>
+          <td>Azorel</td>
+        </tr>
+        <tr>
+            <td>Pisică</td>
+            <td>Mia</td>
+        </tr>
+        <tr>
+            <td>Papagal</td>
+            <td>Rafal</td>
+        </tr><br>
+      </table><br><br>
+</body>
+</html>

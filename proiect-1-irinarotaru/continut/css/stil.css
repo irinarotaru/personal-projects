@@ -1,0 +1,72 @@
+body {
+    background-color: peachpuff;
+}
+nav{
+    background-color: rgb(249, 197, 151);
+    color: gray;
+    padding-top: 30px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    font-size: 25px;
+    word-spacing: 15px;
+    text-shadow: 1px 1px rgb(203, 154, 154); 
+}
+h1{
+    background-color: rgb(164, 77, 0);
+    text-align: center;
+}
+
+footer {
+    background-color: rgb(214, 216, 166);
+    padding: 10px;
+    font-size: 15px;
+    position: fixed;
+    bottom:0;
+    width: 100%;
+    color: rgb(164, 77, 0);
+  }
+
+  form {
+    background-color: blanchedalmond;
+    font-size: 15px;
+    padding:10px;
+  }
+
+  p:nth-child(3) {
+    color: rgb(48, 48, 48);
+  }
+
+  p::first-letter {
+    font-size: 16px;
+  }
+ 
+  @media print and (min-weight: 480px){
+    nav {
+      background-color: rgb(249, 197, 151);
+      color: gray;
+      padding-top: 30px;
+      padding-right: 20px;
+      padding-bottom: 30px;
+      padding-left: 20px;
+      font-size: 25px;
+      word-spacing: 15px;
+      text-shadow: 1px 1px rgb(203, 154, 154); 
+    }
+  }
+
+  @media screen and (min-weight: 480px){
+    nav {
+      background-color: rgb(249, 197, 151);
+      color: gray;
+      padding-top: 20px;
+      padding-right: 10px;
+      padding-bottom: 20px;
+      padding-left: 10px;
+      font-size: 35px;
+      word-spacing: 20px;
+      text-shadow: 1px 1px rgb(203, 154, 154); 
+    }
+  }
+
+ 

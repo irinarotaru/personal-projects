@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE persoane 
+[
+<!ELEMENT persoane (persoana+)>
+<!ELEMENT persoana (nume,prenume,varsta,adresa,studii)>
+<!ATTLIST persoana id CDATA #REQUIRED>
+<!ELEMENT nume (#PCDATA)>
+<!ELEMENT prenume (#PCDATA)>
+<!ELEMENT varsta (#PCDATA)>
+<!ELEMENT adresa (strada,numar,localitate,judet,tara)>
+<!ELEMENT strada (#PCDATA)>
+<!ELEMENT numar (#PCDATA)>
+<!ELEMENT localitate (#PCDATA)>
+<!ELEMENT judet (#PCDATA)>
+<!ELEMENT tara (#PCDATA)>
+<!ELEMENT studii (liceu,facultate)>
+<!ELEMENT liceu (#PCDATA)>
+<!ELEMENT facultate (#PCDATA)>
+]>
+<persoane>
+    <persoana id="1">
+        <nume>Popescu</nume>
+        <prenume>Ion</prenume>
+        <varsta>23</varsta>
+        <adresa>
+            <strada>Vlaicu</strada>
+            <numar>5</numar>
+            <localitate>Iasi</localitate>
+            <judet>Iasi</judet>
+            <tara>Romania</tara>
+        </adresa>
+        <studii>
+            <liceu>National</liceu>
+            <facultate>AC</facultate>
+        </studii>
+    </persoana>
+    <persoana id="2">
+        <nume>Andries</nume>
+        <prenume>Bogdan</prenume>
+        <varsta>29</varsta>
+        <adresa>
+            <strada>Florilor</strada>
+            <numar>2</numar>
+            <localitate>Iasi</localitate>
+            <judet>Iasi</judet>
+            <tara>Romania</tara>
+        </adresa>
+        <studii>
+            <liceu>Eminescu</liceu>
+            <facultate>Litere</facultate>
+        </studii>
+    </persoana>
+    <persoana id="3">
+        <nume>Popa</nume>
+        <prenume>Laura</prenume>
+        <varsta>18</varsta>
+        <adresa>
+            <strada>Garcia</strada>
+            <numar>25</numar>
+            <localitate>Madrid</localitate>
+            <judet>Madrid</judet>
+            <tara>Spania</tara>
+        </adresa>
+        <studii>
+            <liceu>Capitale</liceu>
+            <facultate>Marquez</facultate>
+        </studii>
+    </persoana>
+    <persoana id="4">
+        <nume>Baciu</nume>
+        <prenume>Andrei</prenume>
+        <varsta>50</varsta>
+        <adresa>
+            <strada>Voronet</strada>
+            <numar>5</numar>
+            <localitate>Voronet</localitate>
+            <judet>Suceava</judet>
+            <tara>Romania</tara>
+        </adresa>
+        <studii>
+            <liceu>Negruzii</liceu>
+            <facultate>Informatica</facultate>
+        </studii>
+    </persoana>
+</persoane>
